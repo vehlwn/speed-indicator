@@ -6,7 +6,7 @@ import time
 import typing
 
 
-def get_allowed_devices() -> list[str]:
+def get_allowed_devices() -> typing.List[str]:
     return os.listdir("/sys/class/net")
 
 
