@@ -47,8 +47,8 @@ def main():
         (read_value, read_prefix) = convert_to_human(delta_read)
         (write_value, write_prefix) = convert_to_human(delta_write)
         print(
-            f"read: {read_value:6.4g} {read_prefix}"
-            f"; write: {write_value:6.4g} {write_prefix}"
+            f"read: {read_value:6.4g} {read_prefix:>3}"
+            f"; write: {write_value:6.4g} {write_prefix:>3}"
         )
         old_rx_bytes = new_rx_bytes
         old_tx_bytes = new_tx_bytes
