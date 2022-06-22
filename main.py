@@ -7,7 +7,7 @@ import typing
 
 
 def get_allowed_devices() -> typing.List[str]:
-    return os.listdir("/sys/class/net")
+    return sorted(os.listdir("/sys/class/net"))
 
 
 def read_bytes(net_device: str, mode: str) -> int:
